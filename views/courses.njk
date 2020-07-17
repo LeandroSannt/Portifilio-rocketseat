@@ -1,0 +1,27 @@
+{%extends "layout.njk" %}
+
+{%block title%}
+    <title>Conteudos</title>
+    {%endblock%}
+
+    {%block content%}
+
+        <div class="cursos">
+            {% for item in items%}
+                <div class="card card1 " id="{{item.id}}">
+                    <div class="logo">
+                        <img src="{{item.img_logo}}" alt="logo curso {{item.name}}">
+                    </div>
+                    <div class="detalhes">
+                        <p>{{item.description}}</p>
+                    </div>
+                    <div class="info">
+                        <p class="modulos">{{item.qtd_modulos}}</p>
+                        <p class="starter">{{item.status}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+
+        {%endblock%}

@@ -1,0 +1,41 @@
+{%extends "layout.njk" %}
+
+{%block title%}
+    <title>{{about.name}}-Sobre</title>
+    {%endblock%}
+
+    {%block content %}
+        <section>
+            <img src="{{about.avatar_url}}" alt="Logo {{about.name}}">
+            <h1>{{about.name}}</h1>
+            <p>{{about.description}}</p>
+            <ul>
+                <div class="border">
+                    {% for tecnologias in about.tecnologias %}
+                        <li >{{tecnologias.name1}}</li>
+                        <li >{{tecnologias.name2}}</li>
+                    {% endfor %}
+                </div>
+                <div class="border">
+                    {% for tecnologias in about.tecnologias %}
+                        <li >{{tecnologias.name3}}</li>
+                        <li >{{tecnologias.name4}}</li>
+                    {% endfor %}
+                </div>
+                <div class="border">
+                    {% for tecnologias in about.tecnologias %}
+                        <li >{{tecnologias.name5}}</li>
+                        <li >{{tecnologias.name6}}</li>
+                    {% endfor %}
+                </div>
+            </ul>
+        </section>
+    {% endblock %}
+
+    {%block footer%}
+        <footer>
+            {% for link in about.links %}
+                <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+            {% endfor %}
+        </footer>
+        {%endblock%}

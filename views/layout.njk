@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f676f6c64656e2d77696e642f626f6f7463616d702d6c61756e6368626173652f6c6f676f2e706e67.png" type="image/x-icon">
+        {%block style%}{%endblock%}
+            {%block title%}{%endblock%}
+
+                <link rel="stylesheet" href="/styles.css">
+
+            </head>
+            <body>
+                <header>
+                    <div class="logorocket">
+                        <img src="/imagens/rocketseat.png" alt="">
+                    </div>
+                    <div class="menu_info">
+                        <a href="/">
+                            <p>Sobre</p>
+                        </a>
+                        <a href="/courses">Conteudos</a>
+                        <a href="https://discordapp.com/invite/gCRAFhc" target="_blank">
+                            <p>Comunidade</p>
+                        </a>
+                        <a href="mailto: oi@rocketseat.com.br">
+                            <p>Email</p>
+                        </a>
+                        <a href="tel:+5547992078767">
+                            <p>Telefone</p>
+                        </a>
+                    </div>
+                </header>
+
+                {%block content%}
+                    {%endblock%}
+
+                    {%block footer%}
+                        {%endblock%}
+
+                        <script src="scripts.js"></script>
+                    </body>
+                </html>
