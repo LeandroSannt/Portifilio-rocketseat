@@ -6,7 +6,7 @@
 
     {%block content%}
 
-        <div class="cursos">
+        <div class="cursos" id="muda">
             {% for item in items%}
                 <div class="card card1 " id="{{item.id}}">
                     <div class="logo">
@@ -21,7 +21,11 @@
                     </div>
                 </div>
             {% endfor %}
-
         </div>
 
+        <footer>
+            {% for conta in contas %}
+                <a href="{{conta.url}}" target="_blank"><img src={{conta.icon}} alt=""></a>
+            {% endfor %}
+        </footer>
         {%endblock%}

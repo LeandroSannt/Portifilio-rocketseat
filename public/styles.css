@@ -6,18 +6,23 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(19, 16, 16);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 header {
     width: 100%;
+    height: 10vh;
     background-color: rgba(39, 32, 48, 0.329);
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logorocket img {
+    margin-left: 20px;
     width: 200px;
     height: 50px;
 }
@@ -88,10 +93,9 @@ section ul .border {
 }
 
 footer {
-    max-width: 95%;
-    margin-top: 50px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    margin: 20px;
     padding:15px;
     
 }
@@ -111,7 +115,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
-    max-width: 95vw;
+    width:95% ;
     margin: 0 auto;
 }
 
@@ -140,21 +144,10 @@ footer a:hover {
     transform: scale(1.1);
 }
 
-.card.card1:hover {
+/*.card.card1:hover {
     border: solid 1px #8a2be2;
-}
+}*/
 
-.card.card2:hover {
-    border: solid 1px #fd951f;
-}
-
-.card.card3:hover {
-    border: solid 1px #04d361;
-}
-
-.cursos .card:hover {
-    box-shadow: 1px 5px 5px black;
-}
 
 .cursos .logo {
     margin: 30px;
@@ -190,7 +183,6 @@ footer a:hover {
 
 .info .starter {
     font-weight: bold;
-    background-color: #6c4ebd;
     padding: 5px 10px;
     border-radius: 10px;
     margin-left: 20px;
@@ -198,7 +190,6 @@ footer a:hover {
 
 .info .base {
     font-weight: bold;
-    background-color: #fd951f;
     padding: 5px 10px;
     border-radius: 10px;
     margin-left: 20px;
@@ -206,7 +197,6 @@ footer a:hover {
 
 .info .stack {
     font-weight: bold;
-    background-color: #04d361;
     border-radius: 10px;
     margin-left: 30px;
     padding: 5px 10px;

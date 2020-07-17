@@ -28,16 +28,22 @@ server.get("/",function(req, res){
                 { name6:"NODE"} 
             ],
             links: [
-            {name:"Github", url: "https://github.com/Rocketseat"},
-            {name:"Instagram", url:'https://www.instagram.com/rocketseat_oficial/'},
-            {name:"Linkedin", url: 'https://www.linkedin.com/school/rocketseat/' }       
+            {name:"Github", url: "https://github.com/Rocketseat", icon:"imagens/octocat.png"},
+            {name:"Instagram", url:'https://www.instagram.com/rocketseat_oficial/', icon:"imagens/instagram.png"},
+            {name:"Linkedin", url: 'https://www.linkedin.com/school/rocketseat/' , icon:"imagens/linkedin.svg"}       
             ]
         }
     return res.render("about", {about})
 })
 
 server.get("/courses",function(req, res){
-    return res.render("courses",{items: mod})
+    const contas =[
+    {name:"Github", url: "https://github.com/Rocketseat", icon:"imagens/octocat.png"},
+    {name:"Instagram", url:'https://www.instagram.com/rocketseat_oficial/', icon:"imagens/instagram.png"},
+    {name:"Linkedin", url: 'https://www.linkedin.com/school/rocketseat/' , icon:"imagens/linkedin.svg"}
+    ]
+    return res.render("courses",{items: mod,
+    contas})
 })
 
 server.get("/course/:id", function(req, res){
@@ -47,7 +53,7 @@ server.get("/course/:id", function(req, res){
             return course.id == id
     })
             return res.render ("course",{item:course})
-
+            
 })
 
 server.get("/not-found",function(req, res){
