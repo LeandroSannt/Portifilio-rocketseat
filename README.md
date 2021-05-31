@@ -39,19 +39,19 @@ Além disso é bom ter um editor para executar o código como [VsCode](https://c
 
 #clone este repositório
 
-$ git clone https://github.com/LeandroSannt/Portifilio-rocketseat.git
+$ git clone https://github.com/LeandroSannt/Front-hotel.git
 
 ## acesse a pasta do projeto no terminal/cmd
 
-$ cd Portifilio-rocketseat
+$ cd Front-hotel
 
 ## instale as dependencias 
 
-$ npm install
+$ yarn install
 
 ## execute a aplicação em modo de desenvolvimento 
 
-$ npm start
+$ yarn start
 
 # O servidor iniciará na porta:3000, acesse <http://localhost:3000>
 
